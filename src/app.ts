@@ -12,6 +12,7 @@ import { BatchRoutes } from './app/modules/batch/batch.routes';
 import { BlogRoutes } from './app/modules/blog/blog.routes';
 import { ContactRoutes } from './app/modules/contact/contact.routes';
 import { SettingsRoutes } from './app/modules/settings/settings.routes';
+import { PartnerRoutes } from './app/modules/partner/partner.routes';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 
@@ -33,6 +34,7 @@ app.use('/api/batch', BatchRoutes);
 app.use('/api/blogs', BlogRoutes);
 app.use('/api/contacts', ContactRoutes);
 app.use('/api/settings', SettingsRoutes);
+app.use('/api/partners', PartnerRoutes);
 
 // fixed route
 const getAController = (req: Request, res: Response) => {
